@@ -38,7 +38,7 @@
 
 - (void)testAddition_ShouldReturnZero_WhenInputParam1IsNilAndParam2IsEmpty {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = nil;
     NSString *numberString2 = @"";
     
@@ -50,7 +50,7 @@
 }
 - (void)testAddition_ShouldReturnZero_WhenInputParam1IsNilOrEmptyAndParam2IsRightValue {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = nil;
     NSString *numberString11 = @"";
     NSString *numberString2 = @"22";
@@ -65,7 +65,7 @@
 }
 - (void)testAddition_ShouldReturnZero_WhenInputParam2IsNilOrEmptyAndParam1IsRightValue {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = @"5";
     NSString *numberString2 = nil;
     NSString *numberString22 = @"";
@@ -80,7 +80,7 @@
 }
 - (void)testAddition_ShouldReturnZero_WhenInputParam1IsNotNumbericAndParam2IsRightValue {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = @"1abc2";
     NSString *numberString2 = @"22";
     
@@ -92,7 +92,7 @@
 }
 - (void)testAddition_ShouldReturnZero_WhenInputParam2IsNotNumbericAndParam1IsRightValue {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = @"5";
     NSString *numberString2 = @"abc32nch";
     
@@ -104,7 +104,7 @@
 }
 - (void)testAddition_ShouldReturnRight_WhenInputParam1AndParam2AreValidValues {
     //GIVEN
-    int expected = 1;
+    int expected = 0;
     NSString *numberString1 = @"04";
     NSString *numberString2 = @"22";
     expected = [numberString1 intValue] + [numberString2 intValue];
