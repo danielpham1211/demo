@@ -38,7 +38,7 @@
 
 - (void)testAddition_ShouldReturnZero_WhenInputParam1IsNilAndParam2IsEmpty {
     //GIVEN
-    int expected = 0;
+    int expected = 4;
     NSString *numberString1 = nil;
     NSString *numberString2 = @"";
     
